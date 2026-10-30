@@ -34,8 +34,9 @@ Note: These tax slabs and the PF rate are illustrative assumptions for this prog
 
 ## 3. Flowchart (Mermaid)
 
-
+'''mermaid
 flowchart TD
+
     A([START]) --> B[/Enter Employee Name and ID/]
     B --> C[/Input Basic Pay, Allowances/]
     C --> D[/Input Overtime Hours, Rate and Incentives/]
@@ -48,7 +49,7 @@ flowchart TD
     J --> K[/Display Salary Statement/]
     K --> L([STOP])
 
-
+'''
 
 ## 5. Sample Input
 
