@@ -1,5 +1,4 @@
 
-# Examination Result and Grace-Mark Validation
 
 MAX_GRACE = 5
 
@@ -19,7 +18,7 @@ for i in range(n):
     pass_mark = int(input("Enter pass marks: "))
     obtained = int(input("Enter marks obtained: "))
 
-    # Validate input
+    
     if maximum <= 0 or pass_mark < 0 or pass_mark > maximum:
         print("Invalid maximum or pass marks!")
         raise SystemExit
@@ -31,7 +30,7 @@ for i in range(n):
     grace = 0
     final_marks = obtained
 
-    # Apply grace marks if eligible
+    
     if obtained < pass_mark:
         shortage = pass_mark - obtained
 
@@ -41,7 +40,7 @@ for i in range(n):
                 obtained + grace, maximum
             )
 
-    # Check subject result
+    
     if final_marks >= pass_mark:
         result = "PASS"
     else:
@@ -55,10 +54,10 @@ for i in range(n):
         name, obtained, grace, final_marks, result
     ])
 
-# Calculate percentage
+
 percentage = (total_marks / total_max_marks) * 100
 
-# Determine classification
+
 if not all_passed:
     classification = "FAIL"
 elif percentage >= 75:
@@ -72,7 +71,6 @@ elif percentage >= 40:
 else:
     classification = "FAIL"
 
-# Display results
 print("\n========== EXAMINATION RESULT ==========")
 
 print("Subject\tObtained\tGrace\tFinal\tResult")
