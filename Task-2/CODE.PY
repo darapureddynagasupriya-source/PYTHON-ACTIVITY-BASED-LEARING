@@ -120,4 +120,3 @@ def calculate_parking_fee():
 
 # Main program
 calculate_parking_fee()
-
