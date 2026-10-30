@@ -34,7 +34,7 @@ Note: These tax slabs and the PF rate are illustrative assumptions for this prog
 
 ## 3. Flowchart (Mermaid)
 
-'''mermaid
+```mermaid
 flowchart TD
 
     A([START]) --> B[/Enter Employee Name and ID/]
@@ -48,8 +48,7 @@ flowchart TD
     I --> J[Calculate Net Salary]
     J --> K[/Display Salary Statement/]
     K --> L([STOP])
-
-'''
+```
 
 ## 5. Sample Input
 
