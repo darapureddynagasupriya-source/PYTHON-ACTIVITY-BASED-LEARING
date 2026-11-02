@@ -1,4 +1,3 @@
-
 # Employee Payroll and Deduction Analysis
 
 # Function to calculate progressive income tax
