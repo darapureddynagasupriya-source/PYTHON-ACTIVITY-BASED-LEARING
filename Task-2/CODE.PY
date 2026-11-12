@@ -116,7 +116,3 @@ def calculate_parking_fee():
     print("------------------------------------")
     print("TOTAL FEE      : Rs.", total_fee)
     print("====================================")
-
-
-# Main program
-calculate_parking_fee()
