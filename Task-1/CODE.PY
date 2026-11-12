@@ -1,6 +1,4 @@
-# Employee Payroll and Deduction Analysis
 
-# Function to calculate progressive income tax
 def calculate_tax(salary):
 
     tax = 0
@@ -17,9 +15,6 @@ def calculate_tax(salary):
         tax += (salary - 10000) * 0.05
 
     return tax
-
-
-# Input employee details
 print("===== EMPLOYEE PAYROLL SYSTEM =====")
 
 name = input("Enter Employee Name: ")
@@ -33,25 +28,17 @@ ot_rate = float(input("Enter Overtime Rate per Hour: "))
 
 incentives = float(input("Enter Incentives: "))
 
-# Calculate overtime pay
 overtime_pay = ot_hours * ot_rate
 
-# Calculate gross salary
 gross_salary = basic + allowances + overtime_pay + incentives
-
-# Calculate PF deduction (12% of basic pay)
 pf = basic * 0.12
 
-# Calculate progressive income tax
 income_tax = calculate_tax(gross_salary)
 
-# Calculate total deductions
 total_deductions = pf + income_tax
 
-# Calculate net salary
 net_salary = gross_salary - total_deductions
 
-# Display salary statement
 print("\n========== SALARY STATEMENT ==========")
 
 print("Employee Name       :", name)
